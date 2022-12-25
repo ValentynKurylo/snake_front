@@ -31,7 +31,7 @@ const Game = observer(() => {
         setInterval(() => {
             if (CanvasState.lose) {
                 setLose1(true)
-                setDiraction('')
+                setDiraction('pm ')
             }
             if (CanvasState.play) {
                 CanvasState.move()
@@ -126,7 +126,7 @@ const Game = observer(() => {
             </Modal>
 
             <Modal show={lose1} onHide={() => {
-
+                setLose1(false)
             }}>
                 <Modal.Header closeButton>
                     <Modal.Title>You lost!!!</Modal.Title>

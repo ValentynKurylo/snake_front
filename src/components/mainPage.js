@@ -120,6 +120,7 @@ const MainPage = observer(() => {
 
             <Modal show={login} onHide={() => {
                 alert("You must login!")
+                setLogin(false)
             }}>
                 <Modal.Header closeButton>
                     <Modal.Title>Login</Modal.Title>
@@ -147,6 +148,7 @@ const MainPage = observer(() => {
 
             <Modal show={registration} onHide={() => {
                 alert("You must login!")
+                setLogin(false)
             }}>
                 <Modal.Header closeButton>
                     <Modal.Title>Registration</Modal.Title>
